@@ -7,7 +7,7 @@ class SpeedReading:
         self.timestamp = timestamp
 
     def __str__(self):
-        return f"{self.segment_name} at hour {self.timestamp}: {self.speed} mph"
+        return f"{self.segment_name} at {self.timestamp:%a %Y-%m-%d %H:%M}: {self.speed} mph"
 
 class RoadSegment:
 
